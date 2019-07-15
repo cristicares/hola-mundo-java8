@@ -1,6 +1,14 @@
-plugins {
-    id 'java'
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.1.6.RELEASE")
+    }
 }
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
 
 group 'cl.cristicares.playa'
 version '1.0.0'
@@ -13,5 +21,8 @@ repositories {
 
 dependencies {
     compile group: 'org.springframework', name: 'spring-web', version: '5.1.8.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot', version: '2.1.6.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-autoconfigure', version: '2.1.6.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.1.6.RELEASE'
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
