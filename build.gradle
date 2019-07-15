@@ -10,7 +10,7 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'org.springframework.boot'
 
-group 'cl.cristicares.playa.holamundojava'
+group 'cl.cristicares.playa'
 version '1.0.0'
 
 sourceCompatibility = 1.8
